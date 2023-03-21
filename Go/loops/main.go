@@ -10,4 +10,11 @@ func main() {
 		}
 	}
 
+	num := 28
+	fmt.Println(num)
+
+	for num > 10 {
+		num /= 2
+	}
+	fmt.Println(num)
 }
