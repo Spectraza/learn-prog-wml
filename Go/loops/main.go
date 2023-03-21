@@ -1,6 +1,10 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math/rand"
+	"time"
+)
 
 func main() {
 
@@ -17,4 +21,13 @@ func main() {
 		num /= 2
 	}
 	fmt.Println(num)
+
+	for {
+		ran := rand.Intn(11)
+		time.Sleep(1 * time.Second)
+		fmt.Println(ran)
+		if ran == 10 {
+			break
+		}
+	}
 }
